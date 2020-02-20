@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/formulairestyle.css">
+    <title>Formulaire Voyage</title>
+</head>
+<body>
+    <section id="formulaire">
+        <h1>
+            Formulaire d'estimation pour un voyage !
+        </h1>
+        <form action="post" class="formulaireObject">
+            <div class="formulaireObject">
+                <label for="nom"> nom* : </label><input type="text" name="nom" id="nom" placeholder="Potter" autofocus required>
+            </div>
+            <div  class="formulaireObject">
+                <label for="prenom"> prénom* : </label><input type="text" name="prenom" id="prenom" placeholder="Harry" required>
+            </div>
+            
+            <div class="formulaireObject">
+                <label for="mail"> adresse mail* :</label><input type="email" name="mail" id="mail" placeholder="harry.potter@laposte.net" required>
+            </div>
+
+            <div class="formulaireObject">
+                <label for="tel"> téléphone :</label><input type="tel" id="tel" placeholder="06 46 66 59 58">
+            </div>
+
+            <div class="formulaireObject">
+                <label for="datedepart"> date de départ* :</label><input type="date" required id="datedepart">
+            </div>
+
+            <div class="formulaireObject">
+                <label for="dateretour"> date de retour* :</label><input type="date" required id="dateretour">
+            </div>
+
+            <div class="formulaireObject">
+                <label for="nombredadulte"> nom d'adulte* :</label><input type="number" name="nombredadulte" id="nombredadulte" required>
+            </div>
+
+            <div class="formulaireObject">
+                <label for="nombredenfant"> nom d'enfant (-12 ans)* :</label><input type="number" name="nombredenfant" id="nombredenfant" required>
+            </div>
+
+            <div class="formulaireObject">
+                <label for="petitdejeuner"> Petit-déjeuner ?</label><input type="checkbox" name="petitdejeuner" id="petitdejeuner">
+            </div>
+
+            <div class="formulaireObject">
+                <label for="demanderenseignement"> Demande de renseignement ?</label>
+                <br />
+                <textarea name="demanderenseigment" id="demanderenseigment" cols="30" rows="10"></textarea>
+            </div>
+
+            <div class="formulaireObject">
+                <label for="estimationprix"> Prix estimé :</label>
+            </div>
+
+            <!-- division des boutons de soumissions et de validation-->
+            <div class="formulaireObject">
+                <input type="submit" name="Validation" id="Validation">
+                <input type="reset">
+            </div>
+        </form>
+    </section>
+    
+</body>
+</html>

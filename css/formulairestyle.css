@@ -1,0 +1,23 @@
+section{
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    background-color: blanchedalmond;
+
+    /* mise en bordure*/
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1px;
+    padding-bottom: 1rem;
+}
+
+body{
+    background-image:url(../image/img7.jpg) ;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+div.formulaireObject{
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
