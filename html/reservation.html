@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/formulairestyle.css">
+    <script src="../js/indexfunction.js"></script>
     <title>Formulaire Voyage</title>
 </head>
-<body>
+<body onload="loadFormHtml()">
     <section id="formulaire">
-        <h1>
-            Formulaire d'estimation pour un voyage !
+        <h1 id="destination">
+            
         </h1>
         <form action="post" class="formulaireObject">
+
             <div class="formulaireObject">
                 <label for="nom"> nom* : </label><input type="text" name="nom" id="nom" placeholder="Potter" autofocus required>
             </div>
