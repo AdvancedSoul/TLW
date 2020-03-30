@@ -18,6 +18,19 @@ section,h1 {
     width: 100%;
     height: 100%;
   }
+
+  .zoom div img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+  }
+  .zoom div:hover img {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    transition: all 1s ease;
+}
+
 /* Navigation bar*/
   * {
     box-sizing: border-box;
