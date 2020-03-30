@@ -1,6 +1,6 @@
 var sticky;
 var header
-function load(){
+function loadIndexHtml(){
     window.onscroll = function() {myFunction()};
     header = document.getElementById("navbar");
     sticky = header.offsetTop;
@@ -13,4 +13,18 @@ function myFunction() {
     } else {
         header.classList.remove("sticky");
     }
+}
+
+
+function loadFormulaire(img){
+    document.location.href="reservation.html?name="+img.name;
+}
+
+function loadFormHtml(){
+    var url = window.location.search;
+    url = url.split('?name=');
+    if(url == ""){
+        url[1] = "Erreur, pas de destination sélectionnée :("
+    }
+    document.getElementById("destination").textContent=url[1];
 }
